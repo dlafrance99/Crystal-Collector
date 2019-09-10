@@ -72,3 +72,9 @@ body {
 #player-score {
     padding-bottom: 50px;
 }
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
