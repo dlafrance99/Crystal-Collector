@@ -1,0 +1,74 @@
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+}
+
+.header {
+    background-color: #c07341;
+    padding: 10px;
+    color: #ffffff;
+    margin: 10px;
+    margin-top: 20px;
+    width: 25%;
+    text-align: center;
+}
+
+.instructions {
+    background-color: #f8e6d2;
+    width: 35%;
+    margin: 10px;
+    padding: 10px;
+    color: #71802e;
+}
+
+.randomDiv {
+    height: 75px;
+    width: 20%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: #72c58b;
+    color: #532a60;
+}
+
+.scoreboard {
+    background-color: #79fafa;
+    margin: 10px;
+    padding: 10px;
+    color: #488e85;
+    height: 75px;
+    width: 8%;
+    position: absolute;
+    left: 23%;
+}
+
+.crystal-div {
+    position: relative;
+    top: 90px;
+}
+
+.crystals {
+    position: absolute;
+    float: left;
+    margin: 10px;
+    padding: 10px;   
+}
+
+.player-score {
+    background-color: #4aa097;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    position: relative;
+    top: 130px;
+
+}
+#player-score {
+    padding-bottom: 50px;
+}
