@@ -40,45 +40,61 @@ $(document).ready(function () {
         $("#green-crystal").val(greenCrystalVal);
     }
 
+    var userReset = function () {
+        userNum = 0;
+        $("#player-score").text(userNum);
+    }
+
 
     var startgame = function () {
         goalNumber();
-        userNum = 0;
+        userReset();
         redCrystalRan();
         blueCrystalRan();
         purpleCrystalRan();
         greenCrystalRan();
     }
+    var game = function () {
 
+        if (userNum === goalNum) {
+            console.log('true');
+            win++
+            $("#wins").text(win);
+            alert("You Won!")
+            startgame();
+        } else if (userNum > goalNum) {
+            console.log('false');
+            losses++
+            $("#losses").text(losses);
+            alert("You Lost!")
+            startgame();
+        }
+    }
+
+    startgame();
     $("#red-crystal").on("click", function () {
         userNum = userNum + redCrystalVal;
         $("#player-score").text(userNum)
+        game();
     })
 
     $("#blue-crystal").on("click", function () {
         userNum = userNum + blueCrystalVal;
         $("#player-score").text(userNum);
+        game();
     })
 
     $("#purple-crystal").on("click", function () {
         userNum = userNum + purpleCrystalVal;
         $("#player-score").text(userNum);
+        game();
     })
 
     $("#green-crystal").on("click", function () {
         userNum = userNum + greenCrystalVal;
         $("#player-score").text(userNum);
+        game();
     })
-
-    if (userNum === goalNum) {
-        win++
-        $("#wins").text(win);
-        startgame();
-    }else if (userNum > goalNum) {
-        win++
-        $("#loses").text(win);
-        startgame();
-    }
 
 
 });
