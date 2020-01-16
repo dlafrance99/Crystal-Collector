@@ -32,7 +32,7 @@ https://dlafrance99.github.io/unit-4-game/
 
 ## Organization:
 
-As a simple javascript application, There are three four that alter the functionality of this application. reset.css to normalize the styling across different web browsers, style.css to guide the layout and look of the app, game.js for the game logic, and index.html for formatting.
+As a simple javascript application, There are four files that alter the functionality of this application. reset.css to normalize the styling across different web browsers, style.css to guide the layout and look of the app, game.js for the game logic, and index.html for formatting.
 
 ## Built With
 HTML, Javascript, and CSS
